@@ -81,7 +81,7 @@ function ModalMovie({ movie, isShown, handleClose, isFav ,refreshPage}) {
                         </Button>
                         {
                             !isPosting && <Button variant={isFav ? "warning" : "primary"} type="submit">
-                                {isFav ? "Update" : "Add To Favorite"}
+                                {isFav ? "Update" : "Add"}
                             </Button>
                         }
                         {
