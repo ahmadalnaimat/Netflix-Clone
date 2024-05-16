@@ -40,7 +40,7 @@ function Movie({ movie, isFav, refreshPage }) {
           {isFav && <p className='comment'>{movie.comment}</p>}
 
           {!isFav && (
-            <button onClick={handleShowModal} >
+            <button onClick={handleShowModal}>
               <p><span>Add To Favorite</span></p>
             </button>
           )}

@@ -34,7 +34,7 @@ function ModalMovie({ movie, isShown, handleClose, isFav ,refreshPage}) {
                 overview: movie.overview,
                 comment: e.target.comment.value || 'no comment'
             }
-            const postUrl = "http://localhost:8080/addMovie";
+            const postUrl = "http://localhost:8080/addmovie";
             const result = await axios.post(postUrl, obj);
             console.log("result of adding movie : ", result);
         }
@@ -80,8 +80,8 @@ function ModalMovie({ movie, isShown, handleClose, isFav ,refreshPage}) {
                             Close
                         </Button>
                         {
-                            !isPosting && <Button variant={isFav ? "warning" : "primary"} type="submit" className="no-underline">
-                                {isFav ? "Update" : "Add"}
+                            !isPosting && <Button variant={isFav ? "warning" : "primary"} type="submit">
+                                {isFav ? "Update" : "Add To Favorite"}
                             </Button>
                         }
                         {

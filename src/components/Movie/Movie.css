@@ -27,7 +27,7 @@
 
 .card button {
   border: none;
-  background: rgb(202, 191, 191);
+  background: rgb(54, 54, 54);
   cursor: pointer;
   padding-left: 10px;
   margin-left: 10px;
@@ -38,15 +38,14 @@
 }
 
 .card button span {
-  color: #007bff;
+  color: #ffffff;
   text-decoration: underline;
   font-size: 14px;
   transition: opacity 0.2s;
+  text-decoration: none;
+  
 }
 
 .card button:hover span {
   opacity: 0.8;
-}
-.no-underline{
-  text-decoration: none;
 }
